@@ -1,0 +1,26 @@
+Get IP on Linux
+hostname -I
+
+Connect Minix FTP to Linux Server
+ftp 172.19.124.252
+
+File from MINIX to Linux
+put /path/to/minix_file
+
+File from Linux to MINIX
+get /path/to/ubuntu_file
+
+Count Rows in Directory
+ls -1 | ec -l
+
+Pasos Para Cambiar/Ejecutar el File en MINIX3
+1. Escribir en file desde Windows
+2. Mover a directorio en Linux
+3. En Minix VM 
+    ftp 172.19.124.252
+    cd /home
+    get /path/to/ubuntu_file
+    quit
+    clang dwimShell.c -o dwimsh
+    cp dwimsh /usr/bin/
+    chmod +x /usr/bin/dwimsh
